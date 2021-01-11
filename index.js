@@ -158,7 +158,7 @@ export default class SwitchSelector extends Component {
             styles.button,
             isSelected ? selectedTextContainerStyle : textContainerStyle,
           ]}
-          onPress={() => this.toggleItem(index)}
+          onPress={() => {}}
         >
           {typeof element.customIcon === 'function'
             ? element.customIcon(isSelected)
