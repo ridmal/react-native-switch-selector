@@ -151,14 +151,13 @@ export default class SwitchSelector extends Component {
       const isSelected = selected === index;
 
       return (
-        <TouchableOpacity
+        <View
           key={index}
           disabled={disabled}
           style={[
             styles.button,
             isSelected ? selectedTextContainerStyle : textContainerStyle,
           ]}
-          onPress={() => {}}
         >
           {typeof element.customIcon === 'function'
             ? element.customIcon(isSelected)
@@ -190,7 +189,7 @@ export default class SwitchSelector extends Component {
           >
             {element.label}
           </Text>
-        </TouchableOpacity>
+        </View>
       );
     });
 
